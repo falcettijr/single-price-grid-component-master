@@ -24,7 +24,7 @@ Essa é uma solução para o desafio "Front End Mentor" [Single price grid compo
 
 - Repository: [Repository](https://github.com/falcettijr/single-price-grid-component-master)
 - Solution URL: [Solução]()
-- Live Site URL: [Live Site]()
+- Live Site URL: [Live Site](https://falcettijr.github.io/single-price-grid-component-master/)
 
 ## Feito com
 
