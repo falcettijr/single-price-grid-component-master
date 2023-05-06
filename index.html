@@ -4,42 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <script src="https://cdn.tailwindcss.com"></script>
-    <title>Frontend Mentor | Single Price Grid Component</title>
-    <link rel="stylesheet" href="style.css">
- 
-</head>
-<body>
-  <h1>Join our community</h1>
-
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
   
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Sergio Falcetti</a>.
-    </p>
-  </footer>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontWeight:{
+            normal: '400',
+            bold: '700',
+          },
+          colors: {
+            primaria: '#2ab2af',
+            secundaria: '#c0df34',
+            terciaria: '#4abebd',
+            lightGray: 'hsl(204, 43%, 93%)',
+            grayishBlue: 'hsl(218, 22%, 67%)',
+          },
+          fontFamily: {
+            karla: ['karla','sans-serif']
+          },
+        },
+      }
+    }
+  </script>
+  <title>Frontend Mentor | Single Price Grid Component</title> 
+</head>
+<body class="bg-lightGray font-karla flex justify-center items-center h-screen">
+  <main class="flex-col shadow-2xl">
+    <div class="flex-col bg-white p-5 mb-2 rounded-t-lg">
+      <h1 class="text-primaria font-bold mb-2 ">Join our community</h1>
+      <h2 class="text-secundaria font-bold mb-2">30-day, hassle-free money back guarantee</h2>
+      <p class="text-grayishBlue text-sm mb-2">
+        Gain access to our full library of tutorials along with expert code reviews.
+        Perfect for any developers who are serious about honing their skills.
+      </p>
+    </div>
+    <div class="flex-col bg-primaria p-5 ">
+      <h2 class="font-bold text-lightGray mb-2">Monthly Subscription</h2>
+      <p class="font-bold text-lightGray mb-2">&dollar;29</p> <p class="text-lightGray text-sm mb-2">per month</p>
+      <p class="text-lightGray text-sm mb-2">Full access for less than &dollar;1 a day</p>
+      <button class="bg-secundaria text-white w-full mt-4 mb-2 p-3 rounded-md hover:bg-lightGray hover:text-primaria duration-150">Sign Up</button>
+    </div>
+    <div class="flex-col bg-terciaria p-5 rounded-b-lg">
+      <h2 class="font-bold text-lightGray">Why Us</h2>
+      <p class="flex-col text-white text-sm font-[100] mb-2">
+        Tutorials by industry experts<br>
+        Peer &amp; expert code review<br>
+        Coding exercises<br>
+        Access to our GitHub repos<br>
+        Community forum<br>
+        Flashcard decks<br>
+        New videos every week<br>
+      </p>
+    </div>
+  </main> 
 </body>
 </html>
