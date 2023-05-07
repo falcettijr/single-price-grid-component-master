@@ -1,63 +1,119 @@
-<!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontWeight:{
-            normal: '400',
-            bold: '700',
-          },
-          colors: {
-            primaria: '#2ab2af',
-            secundaria: '#c0df34',
-            terciaria: '#4abebd',
-            lightGray: 'hsl(204, 43%, 93%)',
-            grayishBlue: 'hsl(218, 22%, 67%)',
-          },
-          fontFamily: {
-            karla: ['karla','sans-serif']
-          },
-        },
-      }
-    }
-  </script>
-  <title>Frontend Mentor | Single Price Grid Component</title> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontWeight: {
+                        normal: '400',
+                        bold: '700',
+                    },
+                    colors: {
+                        primaria: '#2ab2af',
+                        secundaria: '#c0df34',
+                        terciaria: '#4abebd',
+                        lightGray: 'hsl(204, 43%, 93%)',
+                        grayishBlue: 'hsl(218, 22%, 67%)',
+                    },
+                    fontFamily: {
+                        karla: ['karla', 'sans-serif']
+                    },
+                },
+            }
+        }
+    </script>
+    <title>Frontend Mentor | Single Price Grid Component</title>
+    <style>
+        main{
+          margin: 100px auto;
+        }
+
+        .boxes {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .boxes .box-left {
+          flex: 1;
+          border-radius: 0 0 0 5px;
+        }
+
+        .boxes .box-right {
+          flex: 1;
+          border-radius: 0 0 5px 0;
+        }
+
+        .boxes .box-top{
+          border-radius: 5px 5px 0 0;
+        }
+        
+
+        @media screen and (max-width: 800px) {
+            .boxes {
+              flex-direction: column;
+            }
+            .boxes .box-left {
+              flex: 1;
+              border-radius: 0 0 0 0;
+            }
+            .boxes .box-right {
+              flex: 1;
+              border-radius: 0px 0 3px 4px;
+            }
+
+            .boxes .box-top {
+              border-radius: 5px 5px 0 0;
+            }
+
+            main{
+              margin: 100px;
+            }
+        } 
+    </style>
 </head>
+
 <body class="bg-lightGray font-karla flex justify-center items-center h-screen">
-  <main class="flex-col shadow-2xl">
-    <div class="flex-col bg-white p-5 mb-2 rounded-t-lg">
-      <h1 class="text-primaria font-bold mb-2 ">Join our community</h1>
-      <h2 class="text-secundaria font-bold mb-2">30-day, hassle-free money back guarantee</h2>
-      <p class="text-grayishBlue text-sm mb-2">
-        Gain access to our full library of tutorials along with expert code reviews.
-        Perfect for any developers who are serious about honing their skills.
-      </p>
-    </div>
-    <div class="flex-col bg-primaria p-5 ">
-      <h2 class="font-bold text-lightGray mb-2">Monthly Subscription</h2>
-      <p class="font-bold text-lightGray mb-2">&dollar;29</p> <p class="text-lightGray text-sm mb-2">per month</p>
-      <p class="text-lightGray text-sm mb-2">Full access for less than &dollar;1 a day</p>
-      <button class="bg-secundaria text-white w-full mt-4 mb-2 p-3 rounded-md hover:bg-lightGray hover:text-primaria duration-150">Sign Up</button>
-    </div>
-    <div class="flex-col bg-terciaria p-5 rounded-b-lg">
-      <h2 class="font-bold text-lightGray">Why Us</h2>
-      <p class="flex-col text-white text-sm font-[100] mb-2">
-        Tutorials by industry experts<br>
-        Peer &amp; expert code review<br>
-        Coding exercises<br>
-        Access to our GitHub repos<br>
-        Community forum<br>
-        Flashcard decks<br>
-        New videos every week<br>
-      </p>
-    </div>
-  </main> 
+    <main class="box-top shadow-2xl">
+        <div class="box-top bg-white p-5">
+            <h1 class="text-primaria font-bold mb-2 ">Join our community</h1>
+            <h2 class="text-secundaria font-bold mb-2">30-day, hassle-free money back guarantee</h2>
+            <p class="text-grayishBlue text-sm mb-2">
+                Gain access to our full library of tutorials along with expert code reviews.
+                Perfect for any developers who are serious about honing their skills.
+            </p>
+        </div>
+        <div class="boxes">
+            <div class="box-left bg-primaria p-5 ">
+                <h2 class="font-bold text-lightGray mb-2">Monthly Subscription</h2>
+                <p class="font-bold text-lightGray mb-2">
+                    <span class="text-xl">$29</span> per month
+                </p>
+                <p class="text-lightGray text-sm mb-2">Full access for less than $1 a day</p>
+                <button
+                    class="bg-secundaria text-white w-full mt-4 mb-2 p-3  hover:bg-lightGray hover:text-primaria duration-150">Sign
+                    Up</button>
+            </div>
+            <div class="box-right bg-terciaria p-5">
+                <h2 class="font-bold text-lightGray">Why Us</h2>
+                <p class="text-white text-sm font-[100] mb-2">
+                    Tutorials by industry experts<br>
+                    Peer &amp; expert code review<br>
+                    Coding exercises<br>
+                    Access to our GitHub repos<br>
+                    Community forum<br>
+                    Flashcard decks<br>
+                    New videos every week<br>
+                </p>
+            </div>
+        </div>
+    </main>
+
 </body>
+
 </html>
