@@ -4,7 +4,6 @@ Essa é uma solução para o desafio [Single price grid component on Frontend Me
 
 ## Índice
 
-- [Visão Geral](#visão-geral)
 - [Screenshot](#screenshot)
 - [Links](#links)
 - [Feito com](#Feito-com)
@@ -12,28 +11,25 @@ Essa é uma solução para o desafio [Single price grid component on Frontend Me
 - [Autor](#autor)
 
 
-## Visão Geral
-
-- XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-
 ## Screenshot
 
-![Screenshot]()
+![Screenshot](screenshot.png)
 
 ## Links
 
 - Repository: [Repository](https://github.com/falcettijr/single-price-grid-component-master)
 - Solution URL: [Solução]()
-- Live Site URL: [Live Site](https://falcettijr.github.io/single-price-grid-component-master/)
+- Live Site URL: [Live Site](https://single-price-grid-component-master-five-mu.vercel.app/)
 
 ## Feito com
 
 - HTML5 
-- CSS 3 
+- TAILWIND
+- CSS
 
 ## O que aprendi
 
-Nesse projeto eu treinei minha habilidades em HTML, CSS3.
+Nesse projeto eu treinei minhas habilidades em TAILWIND.
 
 
 ## Author

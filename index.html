@@ -30,14 +30,10 @@
     </script>
     <title>Frontend Mentor | Single Price Grid Component</title>
     <style>
-        main{
-          margin-inline: 5%;
-          max-width: 700px;
-        }
+      @import url('https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&display=swap');
 
         .boxes {
           display: flex;
-          
           flex-direction: row;
         }
 
@@ -55,8 +51,7 @@
           border-radius: 5px 5px 0 0;
         }
         
-
-        @media screen and (max-width: 800px) {
+        @media screen and (max-width: 400px) {
             .boxes {
               flex-direction: column;
             }
@@ -73,45 +68,48 @@
               border-radius: 5px 5px 0 0;
             }
 
-            main{
-              margin: 100px;
-            }
         } 
     </style>
 </head>
 
 <body class="bg-lightGray font-karla flex justify-center items-center h-screen">
     <main class="box-top shadow-2xl">
-        <div class="box-top bg-white p-5">
-            <h1 class="text-primaria font-bold mb-2 ">Join our community</h1>
+        <div class="box-top bg-white p-8">
+            <h1 class="text-primaria font-bold mb-4 ">Join our community</h1>
             <h2 class="text-secundaria font-bold mb-2">30-day, hassle-free money back guarantee</h2>
             <p class="text-grayishBlue text-sm mb-2">
                 Gain access to our full library of tutorials along with expert code reviews.
-                Perfect for any developers who are serious about honing their skills.
+            <p class="text-grayishBlue text-sm mb-2">Perfect for any developers who are serious about honing their skills.</p>
             </p>
         </div>
         <div class="boxes">
-            <div class="box-left bg-primaria p-5 ">
+            <div class="box-left bg-primaria p-6 ">
                 <h2 class="font-bold text-lightGray mb-2">Monthly Subscription</h2>
                 <p class="font-bold text-lightGray mb-2">
                     <span class="text-xl">$29</span> per month
                 </p>
                 <p class="text-lightGray text-sm mb-2">Full access for less than $1 a day</p>
                 <button
-                    class="bg-secundaria text-white w-full mt-4 mb-2 p-3  hover:bg-lightGray hover:text-primaria duration-150">Sign
+                    class="bg-secundaria text-white w-full mt-4 mb-2 p-3  hover:bg-lightGray hover:text-primaria duration-150 rounded-lg shadow-2xl">Sign
                     Up</button>
             </div>
-            <div class="box-right bg-terciaria p-5">
-                <h2 class="font-bold text-lightGray">Why Us</h2>
-                <p class="text-white text-sm font-[100] mb-2">
-                    Tutorials by industry experts<br>
-                    Peer &amp; expert code review<br>
-                    Coding exercises<br>
-                    Access to our GitHub repos<br>
-                    Community forum<br>
-                    Flashcard decks<br>
-                    New videos every week<br>
-                </p>
+            <div class="box-right bg-terciaria p-6">
+                <h2 class="font-bold text-lightGray pb-3">Why Us</h2>
+                <p class="text-white text-sm font-[100]">Peer &amp; expert code review</p>
+                <p class="text-white text-sm font-[100]">Coding exercises</p>
+                <p class="text-white text-sm font-[100]">Access to our GitHub repos</p>
+                <p class="text-white text-sm font-[100]">Community forum</p>
+                <p class="text-white text-sm font-[100]">Flashcard decks</p>
+                <p class="text-white text-sm font-[100]">New videos every week</p>
+                <p class="text-white text-sm font-[100]">Tutorials by industry experts</p>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
             </div>
         </div>
     </main>
