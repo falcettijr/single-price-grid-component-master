@@ -13,12 +13,12 @@ Essa é uma solução para o desafio [Single price grid component on Frontend Me
 
 ## Screenshot
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.png#vitrinedev)
 
 ## Links
 
 - Repository: [Repository](https://github.com/falcettijr/single-price-grid-component-master)
-- Solution URL: [Solução]()
+- Solution URL: [Solução](https://www.frontendmentor.io/solutions/single-price-grid-component-Owzjeh7pR4)
 - Live Site URL: [Live Site](https://single-price-grid-component-master-five-mu.vercel.app/)
 
 ## Feito com
