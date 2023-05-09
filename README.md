@@ -1,6 +1,11 @@
 # Desafio Frontend Mentor - "Single price grid component"
 
-Essa é uma solução para o desafio [Single price grid component on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc/hub). 
+Essa é uma solução para o desafio [Single price grid component](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc/hub) no Frontend Mentor. 
+
+# Créditos do Projeto
+
+ - Código, planejamento e manutenção feito por **Sergio Falcetti**. 
+ - Design fornecido por FrontEnd Mentor.
 
 ## Índice
 
